@@ -1,0 +1,64 @@
+{% block content %}
+<div class="row showtab" id="uploadform" style="color: #202108;">
+    <div class="col" style="color: #000000;margin-top: 20px;">
+        <div id="minimal-tabs">
+            <ul class="nav nav-tabs" style="color: #000000;">
+                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2"
+                        style="font-size: 20px;">Upload an image&nbsp;<i
+                            class="fa fa-question-circle-o"></i></a></li>
+                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" id="taburl"
+                        href="#tab-1" style="font-size: 20px;">Paste image URL&nbsp;&nbsp;<i
+                            class="fa fa-question-circle-o"></i></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                    <div class="flex-url">    
+                               <div class="con">
+                                     <input type="text" id="url" name="urlImage"
+                                style=" width: 100%; padding: .5em 1em;">
+                                   </div>
+                               <div class="con">
+                                      <button type="button" class="btn btn-info">search by
+                                image</button>
+                                   </div>
+                    </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-2">
+                        <p>
+                            {% with messages = get_flashed_messages() %}
+                              {% if messages %}
+                                <ul class=flashes>
+                                {% for message in messages %}
+                                  <li>{{ message }}</li>
+                                {% endfor %}
+                                </ul>
+                              {% endif %}
+                            {% endwith %}
+                        </p>
+                        {% if filename %}
+                            <div>
+                                <img src="{{url_for('predict.display_image', filename=filename)}}">
+                            </div>
+                        {% endif %}
+                        <form method="post" action="/" enctype="multipart/form-data">
+                            <dl>
+                                <p>
+                                    <input type="file" name="file" autocomplete="off" required>
+                                </p>
+                            </dl>
+                            <p>
+                                <input type="submit" value="Submit">
+                            </p>
+                        </form>
+                    </form>
+                    <div class="textDrag">    
+                               <div class="textdraghere">
+                                    <p>Drag image here!!!</p>
+                               </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

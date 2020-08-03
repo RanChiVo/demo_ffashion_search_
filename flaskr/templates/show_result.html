@@ -1,0 +1,10 @@
+<section class="row">
+    {% for images in imageslist %}
+    {% for image in images %}
+
+    <section class="col-md-4 col-sm-6">
+        <img src="{{ url_for(image) }}">
+    </section>
+    {% endfor %}
+    {% endfor %}
+</section>
