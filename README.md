@@ -3,7 +3,7 @@
 
 ## Introduction
 A fashion image query system is similar to google image. The system is built on an open source visual fashion analysis based on PyTorch - **mmfashion**.
-This project is implemented in the form of a website and is the result of the learning  and researching process in this [[article]](https://arxiv.org/abs/2005.08847).
+This project is implemented in the form of a website and is the result of the learning  and researching process in this [[article]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Liu_DeepFashion_Powering_Robust_CVPR_2016_paper.pdf).
 - Unlike traditional image retrieval, this feature removes the need to type in keywords and terms into the search box. Instead, users search by submitting an image as their query. Results may include tops of similar images.
 
 ## Features
