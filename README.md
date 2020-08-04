@@ -4,10 +4,12 @@
 ## Introduction
 A fashion image query system is similar to google image. The system is built on an open source visual fashion analysis based on PyTorch - **mmfashion**.
 This project is implemented in the form of a website and is the result of the learning  and researching process in this [[article]](https://arxiv.org/abs/2005.08847).
-## Features:
 - Unlike traditional image retrieval, this feature removes the need to type in keywords and terms into the search box. Instead, users search by submitting an image as their query. Results may include tops of similar images.
+
+## Features
 - The image's input will be any fashion image from your device or the address of the image on the website. The search result will be a top of the image similar to the input image.
 - The system allows you to enable the use of two models: VGG16 and ResNet50 to check the accuracy of the query results.
+
 ## Environment settings
 
 - [Python 3.5+](https://www.python.org/)
@@ -40,8 +42,9 @@ export FLASK_APP=flaskr
 export FLASK_ENV=development
 flask run
 ```
-## Instructors
+## Instructor
 - Trần Anh Dũng
+
 ## Student
 - Võ Thị Một - 16520756
 - Class: SE121.K21.PMCL
