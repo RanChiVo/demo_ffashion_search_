@@ -1,5 +1,5 @@
 
-# FFASHION SEARCH PROJECT
+# FFASHION SEARCH DEMO
 
 ## Introduction
 A fashion image query system is similar to google image. The system is built on an open source visual fashion analysis based on PyTorch - **mmfashion**.
