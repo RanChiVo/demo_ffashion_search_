@@ -15,7 +15,7 @@ This project is implemented in the form of a website and is the result of the le
 - [Python 3.5+](https://www.python.org/)
 - [PyTorch 1.0.0+](https://pytorch.org/)
 - [mmcv](https://github.com/open-mmlab/mmcv)
-- [Flask==1.1.2](https://flask.palletsprojects.com/en/1.1.x/installation/)
+- [Flask 1.1.2](https://flask.palletsprojects.com/en/1.1.x/installation/)
 - [Bootstrap 4](https://github.com/greyli/bootstrap-flask)
 ## Prepair dataset and model
 
