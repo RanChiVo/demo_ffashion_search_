@@ -17,7 +17,7 @@ This project is implemented in the form of a website and is the result of the le
 - [mmcv](https://github.com/open-mmlab/mmcv)
 - [Flask 1.1.2](https://flask.palletsprojects.com/en/1.1.x/installation/)
 - [Bootstrap 4](https://github.com/greyli/bootstrap-flask)
-## Prepair dataset and model
+## Prepare dataset and model
 
 - Using two datasets: [DeepFashion - Category and Attribute Prediction Benchmark](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html) and [DeepFashion - In-Shop Clothes Retrieval Benchmark](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/InShopRetrieval.html). The preparation of data just follow the instructions of mmfashion in this section [[data]](https://github.com/open-mmlab/mmfashion/blob/master/docs/DATA_PREPARATION.md).
 - Using available models of mmfashion. You can download and follow the intructions of mmffashion [[model]](https://github.com/open-mmlab/mmfashion/blob/master/docs/DATA_PREPARATION.md)
